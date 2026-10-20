@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0b0f19; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;">
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1000" height="50" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+  <text x="25" y="32" fill="#60a5fa" font-size="16" font-weight="bold">🛡️ PayloadGuard Pro</text>
+  <rect x="200" y="16" width="50" height="20" rx="10" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="210" y="30" fill="#60a5fa" font-size="10" font-weight="bold">v1.0.0</text>
+  
+  <rect x="260" y="16" width="105" height="20" rx="10" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="272" y="30" fill="#34d399" font-size="10" font-weight="bold">CLIENT-SIDE</text>
+
+  <!-- Preset Selector -->
+  <rect x="630" y="14" width="250" height="24" rx="4" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="640" y="30" fill="#9ca3af" font-size="11">E-Commerce Multi-Item Order</text>
+  <rect x="895" y="14" width="80" height="24" rx="4" fill="#2563eb"/>
+  <text x="912" y="30" fill="#ffffff" font-size="11" font-weight="bold">Print PDF</text>
+
+  <!-- Left Column: Schema & Payload Validator -->
+  <rect x="20" y="65" width="460" height="515" rx="8" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+  <rect x="20" y="65" width="460" height="40" rx="8" fill="#1f2937" fill-opacity="0.4"/>
+  <text x="35" y="90" fill="#f3f4f6" font-size="13" font-weight="bold">📝 JSON Schema &amp; Payload Validator</text>
+
+  <!-- Status Banner -->
+  <rect x="35" y="115" width="430" height="35" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.3"/>
+  <text x="50" y="137" fill="#34d399" font-size="11" font-weight="bold">✅ Payload Valid — Conforms strictly to JSON Schema constraints</text>
+
+  <!-- Split Editors -->
+  <text x="35" y="170" fill="#9ca3af" font-size="11" font-weight="bold">JSON Schema (Draft 7):</text>
+  <rect x="35" y="180" width="430" height="170" rx="6" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="45" y="200" fill="#60a5fa" font-size="10">"title": "OrderCheckoutPayload",</text>
+  <text x="45" y="215" fill="#f3f4f6" font-size="10">"type": "object",</text>
+  <text x="45" y="230" fill="#c084fc" font-size="10">"required": ["order_id", "currency", "total_amount"],</text>
+  <text x="45" y="245" fill="#34d399" font-size="10">"total_amount": { "type": "number", "minimum": 0.01 },</text>
+  <text x="45" y="260" fill="#fbbf24" font-size="10">"currency": { "enum": ["USD", "AED", "GBP", "EUR"] }</text>
+
+  <text x="35" y="375" fill="#9ca3af" font-size="11" font-weight="bold">Sample Payload (Validated):</text>
+  <rect x="35" y="385" width="430" height="175" rx="6" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="45" y="405" fill="#60a5fa" font-size="10">"order_id": "ord_8829ab71cf92",</text>
+  <text x="45" y="420" fill="#f3f4f6" font-size="10">"customer_email": "tariq@hypercloud.ae",</text>
+  <text x="45" y="435" fill="#fbbf24" font-size="10">"currency": "AED",</text>
+  <text x="45" y="450" fill="#34d399" font-size="10">"total_amount": 549.99,</text>
+  <text x="45" y="465" fill="#9ca3af" font-size="10">"items": [{ "sku": "DEV-KB", "quantity": 1 }]</text>
+
+  <!-- Right Column: Code & Fuzz Studio -->
+  <rect x="500" y="65" width="480" height="515" rx="8" fill="#111827" stroke="#2d3748" stroke-width="1"/>
+  
+  <!-- Tabs Bar -->
+  <rect x="500" y="65" width="480" height="40" rx="8" fill="#1f2937" fill-opacity="0.5"/>
+  <text x="525" y="90" fill="#60a5fa" font-size="12" font-weight="bold">💻 Synthesized Schemas</text>
+  <line x1="520" y1="104" x2="685" y2="104" stroke="#3b82f6" stroke-width="2"/>
+  <text x="710" y="90" fill="#9ca3af" font-size="12">⚡ Fuzz Matrix</text>
+  <text x="840" y="90" fill="#9ca3af" font-size="12">🧪 Unit Tests</text>
+
+  <!-- Framework Sub-tabs -->
+  <rect x="515" y="115" width="105" height="25" rx="4" fill="#2563eb"/>
+  <text x="528" y="132" fill="#ffffff" font-size="10" font-weight="bold">Zod v3 (TS)</text>
+  <rect x="625" y="115" width="115" height="25" rx="4" fill="#1f2937"/>
+  <text x="635" y="132" fill="#9ca3af" font-size="10">Pydantic v2 (Py)</text>
+  <rect x="745" y="115" width="100" height="25" rx="4" fill="#1f2937"/>
+  <text x="758" y="132" fill="#9ca3af" font-size="10">TypeScript</text>
+  <rect x="850" y="115" width="80" height="25" rx="4" fill="#1f2937"/>
+  <text x="862" y="132" fill="#9ca3af" font-size="10">Golang</text>
+
+  <!-- Generated Zod Code Box -->
+  <rect x="515" y="150" width="450" height="410" rx="6" fill="#0d131f" stroke="#2d3748" stroke-width="1"/>
+  <text x="530" y="175" fill="#60a5fa" font-size="10">import { z } from 'zod';</text>
+  <text x="530" y="200" fill="#f3f4f6" font-size="10">export const OrderCheckoutPayloadSchema = z.object({</text>
+  <text x="545" y="225" fill="#34d399" font-size="10">  order_id: z.string().regex(/^ord_[a-zA-Z0-9]{12}$/),</text>
+  <text x="545" y="250" fill="#34d399" font-size="10">  customer_email: z.string().email(),</text>
+  <text x="545" y="275" fill="#fbbf24" font-size="10">  currency: z.enum(['USD', 'AED', 'GBP', 'EUR']),</text>
+  <text x="545" y="300" fill="#34d399" font-size="10">  total_amount: z.number().min(0.01),</text>
+  <text x="545" y="325" fill="#f3f4f6" font-size="10">  tax_amount: z.number().min(0).optional(),</text>
+  <text x="545" y="350" fill="#c084fc" font-size="10">  items: z.array(z.object({</text>
+  <text x="560" y="375" fill="#f3f4f6" font-size="10">    sku: z.string(), quantity: z.number().int().min(1)</text>
+  <text x="545" y="400" fill="#c084fc" font-size="10">  })).min(1)</text>
+  <text x="530" y="425" fill="#f3f4f6" font-size="10">});</text>
+  <text x="530" y="455" fill="#60a5fa" font-size="10">export type OrderCheckoutPayload = z.infer&lt;typeof ...&gt;;</text>
+</svg>
